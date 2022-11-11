@@ -1,0 +1,18 @@
+* {
+    background-color: darkred;
+}
+
+li {
+    color: azure;
+    font: normal 16px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footer {
+    color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.black-border {
+    border: 5px solid black;
+}
