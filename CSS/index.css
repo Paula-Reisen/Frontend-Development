@@ -1,5 +1,7 @@
 * {
-    background-color: darkred;
+    background-color: chocolate;
+    margin: 5px;
+    text-decoration: none;
 }
 
 li {
@@ -7,12 +9,30 @@ li {
     font: normal 16px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#footer {
+#footer:hover {
     color: blanchedalmond;
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
+    color: darkred;
 }
 
-.black-border {
-    border: 5px solid black;
+.border header {
+    border: 5px solid orange;
+}
+
+.center ul {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+a:hover {
+    color: darkred;
+}
+
+.box-list li {
+    padding: 1px;
+    list-style: none;
+    display: inline;
 }
