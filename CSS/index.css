@@ -22,7 +22,7 @@ li {
 
 .center ul {
     margin: auto;
-    width: 50%;
+    width: fit-content;
     border: 3px solid green;
     padding: 10px;
 }
