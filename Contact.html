@@ -11,44 +11,44 @@
         <main>
             <form name="Contact" method="post" data-netlify="true">
                 <label for="Name">Name:</label><br>
-                <input type="text" name="Name"><br>
+                <input type="text" name="Name" /><br>
                 <label for="Email">Email:</label><br>
-                <input type="email" name="email"><br>
+                <input type="email" name="email" required /><br>
                 <label for="number">Telephone number:</label><br>
-                <input type="number" name="number"><br>
+                <input type="number" name="number" /><br>
                 <label for="Message">Message:<br><textarea name="Message"></textarea></label><br>
                 <label for="age">Age:</label><br>
-                <input type="number" name="age"><br>
+                <input type="number" name="age" min="0" max="200" /><br>
                 <label for="Date of birth">Date of birth:</label><br>
-                <input type="date" name="Date of birth"><br>
+                <input type="date" name="Date of birth" min="1900-06-10" /><br>
                 <label for="gender">Gender:</label><br>
                 
-                <input type="radio" name="gender" value="female">
+                <input type="radio" name="gender" value="female" />
                 <label for="female">female</label>
-                <input type="radio" name="gender" value="male">
+                <input type="radio" name="gender" value="male" />
                 <label for="male">male</label><br>
                 
                 <label for="fav_cuisine">Favorite Cuisine:</label><br>
-                <input type="checkbox" name="fav_cuisine" value="french">
+                <input type="checkbox" name="fav_cuisine" value="french" />
                 <label for="fav_cuisine">French</label><br>
-                <input type="checkbox" name="fav_cuisine" value="italian">
+                <input type="checkbox" name="fav_cuisine" value="italian" />
                 <label for="fav_cuisine">Italian</label><br>
-                <input type="checkbox" name="fav_cuisine" value="spanish">
+                <input type="checkbox" name="fav_cuisine" value="spanish" />
                 <label for="fav_cuisine">Spanish</label><br>
-                <input type="checkbox" name="fav_cuisine" value="arabic">
+                <input type="checkbox" name="fav_cuisine" value="arabic" />
                 <label for="fav_cuisine">Arabic</label><br>
                 
                 <label for="color_picker">Color Picker:</label><br>
-                <input type="color" name="color_picker"><br>
+                <input type="color" name="color_picker" /><br>
                 <label for="Biography">Biography:<br><textarea name="Biography"></textarea></label><br>
                 
                 <label for="upload_file">Upload favorite recipe:</label><br>
-                <input type="file" name="upload_file"><br>
+                <input type="file" name="upload_file" /><br>
                 
                 <label for="url_recipe">URL to recipe:</label><br>
-                <input type="url" name="url_recipe"><br>
-                <input type="reset" name="Reset">
-                <input type="submit" name="Submit"><br>
+                <input type="url" name="url_recipe" /><br>
+                <input type="reset" name="Reset" />
+                <input type="submit" name="Submit" /><br>
             </form>
         </main>
         <footer>
