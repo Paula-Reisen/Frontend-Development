@@ -36,3 +36,23 @@ a:hover {
     list-style: none;
     display: inline;
 }
+
+/*Add Media Queries*/
+@media (max-width: 320PX) {
+    * {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    * {
+        background-color: aqua;
+    }
+
+    li {
+        font-size: small;
+        line-height: 5pt;
+    }
+}
