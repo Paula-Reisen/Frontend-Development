@@ -1,0 +1,58 @@
+* {
+    background-color: chocolate;
+    margin: 5px;
+    text-decoration: none;
+}
+
+li {
+    color: azure;
+    font: normal 16px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footer:hover {
+    color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    color: darkred;
+}
+
+.border header {
+    border: 5px solid orange;
+}
+
+.center ul {
+    margin: auto;
+    width: fit-content;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+a:hover {
+    color: darkred;
+}
+
+.box-list li {
+    padding: 1px;
+    list-style: none;
+    display: inline;
+}
+
+/*Add Media Queries*/
+@media (max-width: 320PX) {
+    * {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    * {
+        background-color: aqua;
+    }
+
+    li {
+        font-size: small;
+        line-height: 5pt;
+    }
+}
