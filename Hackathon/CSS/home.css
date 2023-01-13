@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.parent {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 300px 1fr 80px;
+    grid-template-areas:
+        "header"
+        "main"
+        "widget"
+        "footer";
+}
+
+header,
+main,
+footer,
+.widget-area {
+    padding: 10px;
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: darkred;
+    grid-area: header;
+}
+
+header h1 {
+    display: flex;
+    justify-content: left;
+    margin-top: 0;
+    text-decoration: solid;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+}
+
+.a-container {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 5;
+}
+
+header li {
+    margin: 5px;
+}
+
+header a {
+    color: gold;
+}
+
+header a:hover {
+    color: whitesmoke;
+}
+
+main {
+    background-color: darkred;
+    grid-area: main;
+    border: black 2px double;
+}
+
+footer {
+    background-color: darkred;
+    grid-area: footer;
+}
+
+footer a {
+    color: gold;
+}
+
+.widget-area {
+    background-color: #BA55D3;
+    grid-area: widget;
+}
+li{
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+/* Mobile First*/
+@media screen and (max-width: 320px) {
+    .parent {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "widget"
+            "footer";
+    }
+
+    .a-container {
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+    }
+    .img {
+        size: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header main"
+            "header widget"
+            "header footer";
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .parent {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main widget"
+            "footer footer";
+    }
+}

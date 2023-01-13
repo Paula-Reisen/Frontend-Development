@@ -1,0 +1,18 @@
+* {
+    background-color: darkred;
+}
+
+li {
+    color: azure;
+}
+
+.footer {
+    color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+
+.black-border {
+    border: 5px solid black;
+}
